@@ -45,8 +45,8 @@ jobs:
           today=$(date +"%Y-%m-%d")
           screenshot_path="screenshots/${{ matrix.filename_prefix }}.$today.png"
 
-          echo "today=$today" >> "GITHUB_ENV"
-          echo "screenshot_path=$screenshot_path" >> "GITHUB_ENV"
+          echo "today=$today" >> "$GITHUB_ENV"
+          echo "screenshot_path=$screenshot_path" >> "$GITHUB_ENV"
 
           mkdir -p "$(dirname "$screenshot_path")"
 
