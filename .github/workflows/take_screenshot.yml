@@ -15,10 +15,10 @@ jobs:
     strategy:
       matrix:
         include:
-          - url: alexwlchan.net
-            filename_prefix: alexwlchan.net
-          - url: books.alexwlchan.net
-            filename_prefix: books
+          - url: perperpet.com
+            filename_prefix: perperpet.com
+          - url: project-showcase.jweboy.asia
+            filename_prefix: project.showcase
 
       max-parallel: 1
 
