@@ -42,7 +42,7 @@ jobs:
 
       - name: Take screenshots
         run: |
-          today=$(date + "%Y-%m-%d")
+          today=$(date +"%Y-%m-%d")
           screenshot_path="screenshots/${{ matrix.filename_prefix }}.$today.png"
 
           echo "today=$today" >> "GITHUB_ENV"
