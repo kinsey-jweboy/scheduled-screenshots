@@ -50,7 +50,7 @@ jobs:
 
           mkdir -p "$(dirname "$screenshot_path")"
 
-          if [[ -f "$screenshot_path" ]]; then exist 0; fi
+          if [[ -f "$screenshot_path" ]]; then exit 0; fi
 
           npx playwright screenshot \
               --full-page \
